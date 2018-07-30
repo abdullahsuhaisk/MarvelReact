@@ -1,12 +1,17 @@
 import React from 'react';
+import SearchBar from '../search-bar';
+import CharacterList from '../character-list';
+import Detail from '../details';
 
-const Home = () =>
-  <div className="container">
-    <div className="row">
-      <div className="col-md-offset-5 col-md-2">
-        <h2>Hoşgeldin!!</h2>
+class Home extends React.Component {
+  render() {
+    return( 
+      <div className="container">
+      <SearchBar />
+      <CharacterList />
+      <Detail />
       </div>
-    </div>
-  </div>;
-
+    );
+  }
+}
 export default Home;
